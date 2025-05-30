@@ -708,29 +708,7 @@
     } */
     
 
-    .custom-select-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.custom-select-wrapper .custom-select {
-  width: 100%;
-  padding-right: 30px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.custom-select-wrapper .custom-select-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-  font-size: 14px;
-  color: #555;
-}
+    
     /* For IE10+ */
     select::-ms-expand {
       display: none;

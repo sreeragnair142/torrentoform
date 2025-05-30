@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/donation.css">
   <link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
@@ -414,19 +415,27 @@
                       placeholder="Parking instructions (driveway, street parking?)">
                   </div>
 
-            <div class="form-group">
+                 <div class="form-group">
   <label>Where should we place the collected garbage at the property?</label>
-  <div class="custom-select-wrapper">
-    <select id="garbage-location" class="custom-select form-control">
+  <div style="position: relative;">
+    <select id="garbage-location" class="form-control" style="appearance: none; padding-right: 30px;">
       <option value="">Select Location</option>
       <option value="curb">At the curb</option>
       <option value="garage">In the garage</option>
       <option value="basement">In the basement</option>
       <option value="backyard">In the backyard</option>
     </select>
-    <span class="custom-select-icon">▼</span> <!-- or use a Font Awesome icon -->
+    <i class="fa fa-chevron-down" style="
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #555;
+    "></i>
   </div>
 </div>
+
                   <div class="form-group">
                     <label>Please select property type:</label>
                     <div class="property-types">
